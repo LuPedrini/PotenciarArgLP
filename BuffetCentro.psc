@@ -21,6 +21,7 @@ Algoritmo Buffet_Centro_Tradicionalista
 	//Ganancia $
 	ganancia_bruta<-0
 	ganancia_sobre_ventas<-0
+	Definir opciones, op_precio_modificar, op_stock Como Entero
 	Escribir "¡Hola! este algoritmo sólo acepta números, si ingresa letras dará ERROR"
 	Escribir ""
 	Repetir
@@ -32,8 +33,7 @@ Algoritmo Buffet_Centro_Tradicionalista
 		Escribir "5-Ingresar ventas"
 		Escribir "6-Mostrar balance"
 		Escribir "7-Salir"
-		Leer opciones	
-		
+		Leer opciones
 		Segun opciones Hacer
 			1://Imprimir listado de precios
 				Imprimir "Lista de precios: "
@@ -88,6 +88,7 @@ Algoritmo Buffet_Centro_Tradicionalista
 					Fin Segun
 				Hasta Que op_stock=0
 			5://3-Ingresar ventas
+				Escribir "Recuerde antes de anotar ventas que debe chequear el stock"
 				Escribir "Ingrese la cantidad de empanadas vendidas"
 				Leer empanada_venta_mas
 				empanada_vendids<-empanada_vendids+empanada_venta_mas
@@ -125,8 +126,8 @@ Algoritmo Buffet_Centro_Tradicionalista
 					Escribir ""
 				FinSi
 				Escribir "Ingresaron $ ", total_ventas
-				Escribir "Ganancia bruta $ ", ganancia_bruta, ", el ", ganancia_b_porcentual, "%"
-				Escribir "Ganancias sobre ventas $ ", ganancia_sobre_ventas, ", el ", ganancia_sobre_ventas_porcentual, "%"
+				Escribir "Ganancia bruta $ ", ganancia_bruta, ", el ", trunc(ganancia_b_porcentual), "%"
+				Escribir "Ganancias sobre ventas $ ", ganancia_sobre_ventas, ", el ", trunc(ganancia_sobre_ventas_porcentual), "%"
 				Escribir ""
 				Escribir "Remanentes: ", empanada_stock, " empanadas"
 				Escribir "Remanentes: ", vinob_stock, " botellas de vino"
