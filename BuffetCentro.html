@@ -49,6 +49,7 @@
     </SPAN><SPAN class="SS2">//Ganancia $</SPAN><SPAN class="SS0">
     </SPAN><SPAN class="SS11">ganancia_bruta</SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS0">
     </SPAN><SPAN class="SS11">ganancia_sobre_ventas</SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">opciones</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">op_precio_modificar</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">op_stock</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entero</SPAN><SPAN class="SS0">
     </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"¡Hola! este algoritmo sólo acepta números, si ingresa letras dará ERROR"</SPAN><SPAN class="SS0">
     </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">""</SPAN><SPAN class="SS0">
     </SPAN><SPAN class="SS5">Repetir</SPAN><SPAN class="SS0">
@@ -60,8 +61,7 @@
         </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"5-Ingresar ventas"</SPAN><SPAN class="SS0">
         </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"6-Mostrar balance"</SPAN><SPAN class="SS0">
         </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"7-Salir"</SPAN><SPAN class="SS0">
-        </SPAN><SPAN class="SS5">Leer</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">opciones</SPAN><SPAN class="SS0">    
-        
+        </SPAN><SPAN class="SS5">Leer</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">opciones</SPAN><SPAN class="SS0">
         </SPAN><SPAN class="SS5">Segun</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">opciones</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Hacer</SPAN><SPAN class="SS0">
             </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS10">:</SPAN><SPAN class="SS2">//Imprimir listado de precios</SPAN><SPAN class="SS0">
                 </SPAN><SPAN class="SS5">Imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Lista de precios: "</SPAN><SPAN class="SS0">
@@ -116,6 +116,7 @@
                     </SPAN><SPAN class="SS5">Fin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Segun</SPAN><SPAN class="SS0">
                 </SPAN><SPAN class="SS5">Hasta</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Que</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">op_stock</SPAN><SPAN class="SS10">=</SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS0">
             </SPAN><SPAN class="SS4">5</SPAN><SPAN class="SS10">:</SPAN><SPAN class="SS2">//3-Ingresar ventas</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Recuerde antes de anotar ventas que debe chequear el stock"</SPAN><SPAN class="SS0">
                 </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Ingrese la cantidad de empanadas vendidas"</SPAN><SPAN class="SS0">
                 </SPAN><SPAN class="SS5">Leer</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">empanada_venta_mas</SPAN><SPAN class="SS0">
                 </SPAN><SPAN class="SS11">empanada_vendids</SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS11">empanada_vendids</SPAN><SPAN class="SS10">+</SPAN><SPAN class="SS11">empanada_venta_mas</SPAN><SPAN class="SS0">
@@ -153,8 +154,8 @@
                     </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">""</SPAN><SPAN class="SS0">
                 </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
                 </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Ingresaron $ "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">total_ventas</SPAN><SPAN class="SS0">
-                </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Ganancia bruta $ "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">ganancia_bruta</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">", el "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">ganancia_b_porcentual</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"%"</SPAN><SPAN class="SS0">
-                </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Ganancias sobre ventas $ "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">ganancia_sobre_ventas</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">", el "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">ganancia_sobre_ventas_porcentual</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"%"</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Ganancia bruta $ "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">ganancia_bruta</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">", el "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS16">trunc</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">ganancia_b_porcentual</SPAN><SPAN class="SS10">),</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"%"</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Ganancias sobre ventas $ "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">ganancia_sobre_ventas</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">", el "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS16">trunc</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">ganancia_sobre_ventas_porcentual</SPAN><SPAN class="SS10">),</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"%"</SPAN><SPAN class="SS0">
                 </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">""</SPAN><SPAN class="SS0">
                 </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Remanentes: "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">empanada_stock</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">" empanadas"</SPAN><SPAN class="SS0">
                 </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Remanentes: "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">vinob_stock</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">" botellas de vino"</SPAN><SPAN class="SS0">
